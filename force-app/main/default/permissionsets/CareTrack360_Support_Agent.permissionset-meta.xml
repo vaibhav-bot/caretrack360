@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>CareTrack360 Support Agent</label>
+    <description>Grants object, field, and (later) Apex class access needed to work W
+arranty Claims and Delivery Tracking in CareTrack360.</description>
+    <objectPermissions>
+        <object>Warranty_Claim__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+        <viewAllRecords>false</viewAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
+    </objectPermissions>
+     <objectPermissions>
+        <object>Delivery_Tracking__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+        <viewAllRecords>true</viewAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
+    </objectPermissions>
+    <fieldPermissions><field>Warranty_Claim__c.Description__c</field><readable>true</readable><editable>true</editable></fieldPermissions>
+    <fieldPermissions><field>Warranty_Claim__c.Related_Case__c</field><readable>true</readable><editable>false</editable></fieldPermissions>
+    <fieldPermissions><field>Warranty_Claim__c.Resolution_Notes__c</field><readable>true</readable><editable>true</editable></fieldPermissions>
+    
+
+    <fieldPermissions><field>Delivery_Tracking__c.Tracking_Number__c</field><readable>true</readable><editable>false</editable></fieldPermissions>
+    <fieldPermissions><field>Delivery_Tracking__c.Last_Synced__c</field><readable>true</readable><editable>false</editable></fieldPermissions>
+    <fieldPermissions><field>Delivery_Tracking__c.Estimated_Delivery__c</field><readable>true</readable><editable>false</editable></fieldPermissions>
+</PermissionSet>
