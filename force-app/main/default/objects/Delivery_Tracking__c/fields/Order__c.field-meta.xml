@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+<fullName>Order__c</fullName>
+<deleteConstraint>Restrict</deleteConstraint>
+<label>Order</label>
+<referenceTo>Order</referenceTo>
+<relationshipLabel>Delivery Trackings</relationshipLabel>
+<required>true</required>
+<relationshipName>Delivery_Trackings</relationshipName>
+<type>Lookup</type>
+</CustomField>
